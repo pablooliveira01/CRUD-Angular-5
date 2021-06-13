@@ -1,0 +1,37 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title>Cadastrar novo veículo</mat-card-title>
+
+    <form class="create-article-form" #form="ngForm" (ngSubmit)="onSubmit(form.value)" autocomplete="off">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Placa" name="placa" ngModel>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Chassi" name="chassi" ngModel>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Renavam" name="renavam" ngModel>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Modelo" name="modelo" ngModel>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Marca" name="marca" ngModel>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Ano" name="ano" ngModel>
+      </mat-form-field>
+
+      <div class="row-buttons">
+        <span class="spacer"></span>
+        <button routerLink="/articles" class="form-btn" id="outlined" mat-raised-button>Cancelar</button>
+        <button type="submit" class="form-btn" id="colored" mat-raised-button>Criar</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

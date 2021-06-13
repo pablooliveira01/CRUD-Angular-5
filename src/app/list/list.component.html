@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="table-container mat-elevation-z2">
+    <div class="header">
+      <h1 id="totalRows">{{ getTotalRows() }}</h1>
+      <h1>Veículos cadastrados</h1>
+      <span class="spacer"></span>
+      <a mat-fab id="colored" routerLink="/create">
+        <mat-icon aria-label="add">add</mat-icon>
+      </a>
+    </div>
+  </div>
+
+  <div class="table-container mat-elevation-z2">
+    <div class="table-header">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Procurar">
+      </mat-form-field>
+    </div>
+    <mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="placa" class="colored">
+        <mat-header-cell *matHeaderCellDef> Placa </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.placa }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="chassi">
+        <mat-header-cell *matHeaderCellDef> Chassi </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.chassi }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="renavam">
+        <mat-header-cell *matHeaderCellDef> Renavam </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.renavam}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="modelo">
+        <mat-header-cell *matHeaderCellDef> Modelo </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.modelo }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="marca">
+        <mat-header-cell *matHeaderCellDef> Marca </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.marca}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="ano">
+        <mat-header-cell *matHeaderCellDef> Ano </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.ano}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="acoes">
+        <mat-header-cell *matHeaderCellDef> Ações </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <a mat-icon-button title="Editar" routerLink="/edit/{{ element.id }}">
+            <mat-icon class="listIcons">create</mat-icon>
+          </a>
+          <button mat-icon-button title="Remover" (click)="confirm(element)">
+            <mat-icon class="listIcons">delete</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row [ngClass]="{'colored': row.placa == row.placa}" *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+    </mat-table>
+  </div>
+</div>

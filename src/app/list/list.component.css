@@ -1,0 +1,167 @@
+.mat-table {
+  overflow: auto;
+  max-height: 402px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 1.5rem;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #fcfaf7;
+  border-radius: 0.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header h1 {
+  display: inline;
+  font-weight: 400;
+  padding-top: 1.5rem
+}
+
+.table-header {
+  min-height: 64px;
+  padding: 8px 24px 0;
+  background-color: #fcfaf7;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.listIcons {
+  color: rgb(160, 160, 160);
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+.listIcons:hover {
+  color: #FF8400;
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+.mat-cell {
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+.mat-cell:hover {
+  color: #FF8400;
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+.colored {
+  color: #FF8400;
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+.colored:hover {
+  background-color: #fcfaf7;
+  border-bottom-width: 0px;
+  border-radius: 4px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: #FF8400;
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+.mat-fab {
+  margin-top: 1rem
+}
+
+.mat-header-cell:first-child, .mat-cell:first-child {
+  flex: 10%;
+}
+
+.mat-header-cell:nth-child(2), .mat-cell:nth-child(2) {
+  flex: 18%;
+}
+
+.mat-header-cell:nth-child(3), .mat-cell:nth-child(3) {
+  flex: 18%;
+}
+
+.mat-header-cell:nth-child(4), .mat-cell:nth-child(4) {
+  flex: 16%;
+}
+
+.mat-header-cell:nth-child(5), .mat-cell:nth-child(5) {
+  flex: 16%;
+}
+
+.mat-header-cell:nth-child(6), .mat-cell:nth-child(6) {
+  flex: 8%;
+}
+
+.mat-header-cell:last-child, .mat-cell:last-child {
+  flex: 6%
+}
+
+#colored {
+  background-color: #FF8400;
+  transition: 0.5s all ease 0s;
+  -webkit-transition: 0.5s all ease 0s;
+  -moz-transition: 0.5s all ease 0s;
+  -ms-transition: 0.5s all ease 0s;
+}
+
+#colored:hover {
+  background-color: #da7000;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+#totalRows {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.9rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+  background-color: #FF8400;
+  color: #FFF;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  color: #FF8400 !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  background-color: #aaa !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  background-color: #FF8400 !important;
+}

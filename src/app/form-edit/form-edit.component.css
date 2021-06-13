@@ -1,0 +1,96 @@
+.create-article-form {
+  min-width: 150px;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.row-input {
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.row-buttons {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.form-btn {
+  margin-left: 0.5rem;
+}
+
+#colored {
+  background-color: #FF8400;
+  color: #FFF;
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+#colored:hover {
+  background-color: #da7000;
+  color: #FFF;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+#outlined {
+  border-width: 0.1rem;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #FF8400;
+  color: #FF8400;
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+#outlined:hover {
+  border-color: #da7000;
+  border-style: solid;
+  border-width: 0.1rem;
+  color: #da7000;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.33s all ease 0s;
+  -webkit-transition: 0.33s all ease 0s;
+  -moz-transition: 0.33s all ease 0s;
+  -ms-transition: 0.33s all ease 0s;
+}
+
+mat-radio-button {
+  margin-right: 1rem;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #FF8400 !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #aaa !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #FF8400 !important;
+}

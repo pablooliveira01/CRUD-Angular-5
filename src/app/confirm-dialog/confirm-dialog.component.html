@@ -1,0 +1,17 @@
+<mat-dialog-actions>
+  <div class="imgContainer">
+    <img class="img" src="../../assets/car.png">
+  </div>
+</mat-dialog-actions>
+<mat-dialog-content>
+  <p>
+    As informações referentes ao veículo da marca <strong>{{ data.marca }}</strong> vinculadas à
+    placa <strong>{{ data.placa }}</strong> e modelo <strong>{{ data.modelo }}</strong> serão apagadas permanentemente
+    do sistema. Você tem certeza que deseja continuar?
+  </p>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close id="outlined">Cancelar</button>
+  <button mat-button [mat-dialog-close]="true" id="colored">Deletar</button>
+</mat-dialog-actions>

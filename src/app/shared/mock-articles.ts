@@ -1,0 +1,58 @@
+import { Article } from './article';
+
+export const ARTICLES: Article[] = [
+  {
+    id: 0,
+    placa: 'FAF 0204',
+    chassi: '62390124024920572',
+    renavam: '29482750274',
+    modelo: 'Corsa',
+    marca: 'Chevrolet',
+    ano: '2014',
+  },
+  {
+    id: 1,
+    placa: 'AFO 3902',
+    chassi: '24546545135454531',
+    renavam: '32490423923',
+    modelo: 'Toro',
+    marca: 'Fiat',
+    ano: '2004',
+  },
+  {
+    id: 2,
+    placa: 'ASK 3094',
+    chassi: '30942039423894920',
+    renavam: '92034882394',
+    modelo: 'Focus',
+    marca: 'Ford',
+    ano: '2016',
+  },
+  {
+    id: 3,
+    placa: 'GAS 2039',
+    chassi: '20349230492349234',
+    renavam: '02934823794',
+    modelo: 'Siena',
+    marca: 'Fiat',
+    ano: '2020',
+  },
+  {
+    id: 4,
+    placa: 'SIA 2394',
+    chassi: '20394239482392349',
+    renavam: '39423849234',
+    modelo: 'Duster',
+    marca: 'Renault',
+    ano: '2015',
+  },
+  {
+    id: 5,
+    placa: 'UAI 2303',
+    chassi: '23904823940238429',
+    renavam: '29342384092',
+    modelo: 'Celta',
+    marca: 'Chevrolet',
+    ano: '2016',
+  },
+];

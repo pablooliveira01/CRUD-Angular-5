@@ -1,0 +1,21 @@
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.header {
+  height: 100px;
+  background: linear-gradient( 81.66deg, #FF8400 -1.2%, #FFCB00 89.94%);
+}
+
+.headerText {
+  font-weight: 900;
+  font-size: 28px;
+  color: #FFF; 
+  letter-spacing: 0.4px;
+  line-height: 42px;
+  margin-left: 10px;
+}
+
+.img {
+  width: 120px;
+}
