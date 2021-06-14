@@ -3,6 +3,6 @@
 Firstly, execute the following command:
 - yarn
 
-Secondly, execute the following command:
+Secondly, execute the followings commands:
 - ng serve
 - ng test

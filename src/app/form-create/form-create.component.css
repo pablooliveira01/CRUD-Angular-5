@@ -79,6 +79,14 @@ mat-radio-button {
   margin-right: 1rem;
 }
 
+mat-card-title {
+  letter-spacing: 0.7px;
+}
+
+mat-form-field {
+  letter-spacing: 0.33px;
+}
+
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
   color: #FF8400 !important;

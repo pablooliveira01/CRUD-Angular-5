@@ -16,7 +16,8 @@
 .header h1 {
   display: inline;
   font-weight: 400;
-  padding-top: 1.5rem
+  padding-top: 1.5rem;
+  letter-spacing: 0.7px;
 }
 
 .table-header {
@@ -49,6 +50,7 @@
 }
 
 .mat-cell {
+  letter-spacing: 0.33px;
   transition: 0.33s all ease 0s;
   -webkit-transition: 0.33s all ease 0s;
   -moz-transition: 0.33s all ease 0s;
@@ -56,6 +58,7 @@
 }
 
 .mat-cell:hover {
+  letter-spacing: 0.33px;
   color: #FF8400;
   transition: 0.33s all ease 0s;
   -webkit-transition: 0.33s all ease 0s;
@@ -86,6 +89,10 @@
 
 .mat-fab {
   margin-top: 1rem
+}
+
+.mat-header-cell {
+  letter-spacing: 0.7px;
 }
 
 .mat-header-cell:first-child, .mat-cell:first-child {
