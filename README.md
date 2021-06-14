@@ -1,7 +1,8 @@
 # CRUD - Angular
 
 Firstly, execute the following command:
-- ng serve
+- yarn
 
 Secondly, execute the following command:
+- ng serve
 - ng test
